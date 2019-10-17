@@ -1,0 +1,101 @@
+Agenda : 
+
+1. Git
+2. Github
+3. Download, Install & Configure gitbash 
+4. Creating Repository part of github 
+5. Working with gitflow commands 
+
+
+Keshavs-MacBook-Pro:~ keshavkummari$ pwd
+/Users/keshavkummari
+Keshavs-MacBook-Pro:~ keshavkummari$ mkdir intelli_devops_02
+Keshavs-MacBook-Pro:~ keshavkummari$ ls -lrt intelli_devops_02
+Keshavs-MacBook-Pro:~ keshavkummari$ ls -ld intelli_devops_02
+drwxr-xr-x  2 keshavkummari  staff  64 Oct 17 07:26 intelli_devops_02
+Keshavs-MacBook-Pro:~ keshavkummari$ 
+Keshavs-MacBook-Pro:~ keshavkummari$ cd intelli_devops_02
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ pwd
+/Users/keshavkummari/intelli_devops_02
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ ls -lrta
+total 0
+drwxr-xr-x   2 keshavkummari  staff    64 Oct 17 07:26 .
+drwxr-xr-x+ 98 keshavkummari  staff  3136 Oct 17 07:26 ..
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ echo "# intelli_devops_02" >> README.md
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ ls -lrta
+total 8
+drwxr-xr-x+ 98 keshavkummari  staff  3136 Oct 17 07:26 ..
+drwxr-xr-x   3 keshavkummari  staff    96 Oct 17 07:26 .
+-rw-r--r--   1 keshavkummari  staff    20 Oct 17 07:26 README.md
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ cat README.md 
+# intelli_devops_02
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ 
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ git init
+Initialized empty Git repository in /Users/keshavkummari/intelli_devops_02/.git/
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ ls -lrta
+total 8
+drwxr-xr-x+ 98 keshavkummari  staff  3136 Oct 17 07:26 ..
+-rw-r--r--   1 keshavkummari  staff    20 Oct 17 07:26 README.md
+drwxr-xr-x   4 keshavkummari  staff   128 Oct 17 07:27 .
+drwxr-xr-x  10 keshavkummari  staff   320 Oct 17 07:27 .git
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ ls -lrta
+total 8
+drwxr-xr-x+ 98 keshavkummari  staff  3136 Oct 17 07:26 ..
+-rw-r--r--   1 keshavkummari  staff    20 Oct 17 07:26 README.md
+drwxr-xr-x   4 keshavkummari  staff   128 Oct 17 07:27 .
+drwxr-xr-x  10 keshavkummari  staff   320 Oct 17 07:27 .git
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ git add README.md
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ 
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ git commit -m "first commit"
+[master (root-commit) a82966b] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ git status
+On branch master
+nothing to commit, working tree clean
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ 
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ git remote add origin https://github.com/keshavkummari/intelli_devops_02.git
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ 
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 240 bytes | 240.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/keshavkummari/intelli_devops_02.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ # git config --global user.name "keshavkummari"
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ 
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ # git config --global user.email "keshav.kummari@gmail.com"
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ 
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ pwd
+/Users/keshavkummari/intelli_devops_02
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ ls -lrta
+total 8
+drwxr-xr-x+ 98 keshavkummari  staff  3136 Oct 17 07:26 ..
+-rw-r--r--   1 keshavkummari  staff    20 Oct 17 07:26 README.md
+drwxr-xr-x   4 keshavkummari  staff   128 Oct 17 07:27 .
+drwxr-xr-x  13 keshavkummari  staff   416 Oct 17 07:29 .git
+Keshavs-MacBook-Pro:intelli_devops_02 keshavkummari$ pwd
+/Users/keshavkummari/intelli_devops_02

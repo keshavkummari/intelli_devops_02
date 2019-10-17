@@ -1,0 +1,42 @@
+
+Agenda : 
+
+Yesterdays session recap:
+    1. Introduction
+    2. Course Introduction
+    3. DevOps Pre-Requisites
+    4. Questions
+
+Today Topics :
+
+    1. How the session Notes and Video's were shared 
+        1.1 Running Notes 
+            - Images
+            - .txt 
+            - Drawings 
+            VCS/SCM i.e. Github - Repository(Folder/Directory)
+
+        1.2 Video 
+            - LMS  
+
+    2. List of Tools and Softwares were used part our training
+        1. Laptop/Desktop : Windows OS, MacOS , Linux 
+            1.1 IDE       : Visual Studio Code (https://code.visualstudio.com/download), 
+                            STS (https://spring.io/tools)
+
+            1.2 Text Editors : Notepad++, Visual Studio Code, ATOM (https://atom.io/)
+            1.3 VCS / SCM  : Version Control System(VCS) also known as Source Code/Control Management(SCM)
+            1.4 Gitbash  :
+                1. To Interact with VCS/SCM 
+                2. Do SSH to Linux/Unix 
+                3. Linux Commands on Windows 
+                4. Cmder only for windows users (https://cmder.net/)
+                
+            1.5 AWS Cloud (https://aws.amazon.com/free)
+
+Course Index:
+https://intellipaat.com/devops-certification-training/
+
+    3. DevOps CI/CD Pipeline Setup flow
+
+    4. VCS/SCM - Github 
